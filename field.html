@@ -60,8 +60,10 @@
 
     <div class="container">
 
-<div style="text-align:center">
-<img src="fig/fzuhead.jpg" alt="view" width="100%" />
+<div style="background:url('fig/fzuhead.jpg') no-repeat; width = 100%; height:214px; font-family:STXingkai; font-size:40px;color:red;">
+<p align="center">
+福州大学核物理与核天体团队
+</p>
 </div>
 
 
@@ -95,13 +97,13 @@
 
 <br />
 
-<DIV >
+<DIV style="cursor:pointer" onclick="isHidden('thux')">
 <h2 style="font-size:25px; color:blue;" >
 宇宙核纪年
 </h2>
 </DIV>
 
-<DIV >
+<DIV id="thux" style="display:none">
 <p style="font-size:20px; color:black;" >
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 宇宙年龄是最基本的宇宙学参数之一，不同的方法预测的宇宙年龄存在差异。如基于微波背景辐射的研究给出的宇宙年龄是138亿年，而引力透镜研究给出的为114亿年，这导致了宇宙年龄争论。
@@ -121,13 +123,13 @@
 
 
 
-<DIV >
+<DIV style="cursor:pointer" onclick="isHidden('ofnedf')">
 <h2 style="font-size:25px; color:blue;" >
 原子核无轨道能量密度泛函
 </h2>
 </DIV>
 
-<DIV >
+<DIV id="ofnedf" style="display:none">
 <p style="font-size:20px; color:black;" >
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 量子多体系统的求解是物理与化学领域长期面临的难题。1964年，Hohenberg和Kohn证明了量子多体系统的基态能量可以表示为密度的泛函，从而可以降低求解量子多体系统的复杂度。然而，Hohenberg-Kohn定理仅证明了能量密度泛函的存在性，而没有给出其具体形式。因此，探索精确的能量密度泛函是原子分子物理、凝聚态物理、材料物理、量子化学以及原子核物理等研究领域的热点和难点。特别在原子核物理领域，由于强相互作用的特殊性与复杂性，确定针对原子核系统的能量密度泛函形式尤为困难，目前常用的原子核能量密度泛函均须引入单粒子轨道波函数自由度。
@@ -143,13 +145,13 @@
 
 
 
-<DIV >
+<DIV style="cursor:pointer" onclick="isHidden('mass')">
 <h2 style="font-size:25px; color:blue;" >
 原子核质量
 </h2>
 </DIV>
 
-<DIV >
+<DIV id="mass" style="display:none">
 <p style="font-size:20px; color:black;" >
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 原子核质量蕴含着丰富的核结构信息，而且决定了各种核反应的反应能，是核物理与核天体物理研究的关键核物理量。目前，实验上已经测得约 2500 种原子核的质量，而理论预言存在的原子核约 7000-10000 个。在可预见的未来，大部分原子核仍然无法在实验室产生，需要理论模型为相关研究提供原子核质量预言。
@@ -187,13 +189,13 @@
 
 
 
-<DIV >
+<DIV style="cursor:pointer" onclick="isHidden('chiral')">
 <h2 style="font-size:25px; color:blue;" >
 原子核的手征对称性
 </h2>
 </DIV>
 
-<DIV >
+<DIV id="chiral" style="display:none">
 <p style="font-size:20px; color:black;" >
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 手征对称性是物理学等自然科学中的一个重要现象。原子核的手征对称性由 Frauendorf 和孟杰于 1997 年提出，其实验特征为手征双重带。这一预言于 2001 年被实验证实。目前，手征对称性已成为原子核结构的研究热点之一，先后有 20 多个国家、约 100 多个研究团队参与研究。
@@ -208,14 +210,16 @@
 </DIV>
 
 
+<br />
 
-<DIV >
+
+<DIV style="cursor:pointer" onclick="isHidden('liuti')">
 <h2 style="font-size:25px; color:blue;" >
 最理想的流体
 </h2>
 </DIV>
 
-<DIV >
+<DIV id="liuti" style="display:none">
 <p style="font-size:20px; color:black;" >
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 夸克胶子等离子体和超冷原子并称为世界上最理想的流体，产生于相对论重离子碰撞及早期宇宙物态中。
@@ -224,15 +228,15 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 从玻尔兹曼方程出发推导能描述多种组分流体演化的二阶相对论流体方程。基于领头阶 QCD 互作用，数值计算了夸克胶子等离子体的输运系数，粘滞输运系数非常小，审稿人评价“数值计算具有相当挑战性”，补充了相关研究的空白 [Phys.Rev.D 106, 014007 (2022)]。
 </p>
+</DIV>
 
-
-<DIV >
+<DIV style="cursor:pointer" onclick="isHidden('cichang')">
 <h2 style="font-size:25px; color:blue;" >
 最强的磁场
 </h2>
 </DIV>
 
-<DIV >
+<DIV id="cichang" style="display:none">
 <p style="font-size:20px; color:black;" >
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 相对论重离子碰撞中产生了世界上最强的磁场，达到 10 的13到14次方量级 (单位 T)，作为对比，最大人工磁场 100 到 1000 T。
@@ -241,15 +245,15 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 首次系统计算了重夸克偶素磁场下的静态性质(如质量和束缚能)。基于量子电动力学 (QED) 的多极展开，数值计算了重夸克偶素磁场下的动态性质，如衰变宽度和解离截面，定量证实了磁场的影响显著 [Phys.Rev.D 105, 094013 (2022)]。
 </p>
+</DIV>
 
-
-<DIV >
+<DIV style="cursor:pointer" onclick="isHidden('woxuan')">
 <h2 style="font-size:25px; color:blue;" >
 最强的涡旋场
 </h2>
 </DIV>
 
-<DIV >
+<DIV id="woxuan" style="display:none">
 <p style="font-size:20px; color:black;" >
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 非对心相对论重离子碰撞中产生的夸克胶子等离子体是世界上转得最快的流体，其转速达到 10 的 22 次方每秒，作为对比，脉冲星的转速为 1000 转每秒。
@@ -266,11 +270,16 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 直接求解自旋 Boltzmann 方程的简正解，讨论了自旋波的传播问题和自旋弛豫 [Phys.Rev.D 106, 036004 (2022), Phys.Rev.D 105, 096021 (2022), Phys.Rev.D 107, 016010 (2023)]。
 </p>
+</DIV>
 
 
 
+<br />
+<br />
 
-
+<p style="font-size:18px; color:black;" >
+[备注：可点击感兴趣的方向查看具体介绍。]
+</p>
 
 
 
